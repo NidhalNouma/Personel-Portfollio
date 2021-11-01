@@ -1,6 +1,7 @@
 
 :root {
-  --PCOLOR: #602fd1;
+  --PCOLOR: #07FF93;
+  --BGCOLOR: #15173D;
 }
 
 /* width */
@@ -18,7 +19,7 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #602fd1b2;
+  background: #07FF93b2;
   border-radius: 50px;
   transition: all 0.2s ease-in-out;
 }
@@ -29,12 +30,12 @@
 }
 
 html {
-  background-color: #040404;
+  background-color: var(--BGCOLOR);
 }
 
 body {
   font-family: "Open Sans", sans-serif;
-  background-color: #040404;
+  background-color: var(--BGCOLOR);
   color: #fff;
   position: relative;
   background: transparent;
