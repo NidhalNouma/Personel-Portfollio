@@ -1,6 +1,7 @@
 
 :root {
-  --PCOLOR: #07FF93;
+  /* --PCOLOR: #07FF93; */
+  --PCOLOR: #15173D;
   --BGCOLOR: #15173D;
 }
 
@@ -19,7 +20,7 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #07FF93b2;
+  background: #15173Db2;
   border-radius: 50px;
   transition: all 0.2s ease-in-out;
 }
