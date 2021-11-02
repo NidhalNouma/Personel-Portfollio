@@ -1,8 +1,11 @@
-
 :root {
-  /* --PCOLOR: #07FF93; */
-  --PCOLOR: #15173D;
-  --BGCOLOR: #15173D;
+  --PCOLOR: #07ff93;
+  --SCOLOR: #bbf4ff;
+  --TCOLOR: #15173d;
+  --BGCOLOR: #040404;
+
+  --SHCOLOR: rgba(21, 23, 61, 0.9);
+  --CHCOLOR: rgba(21, 23, 61, 0.8);
 }
 
 /* width */
@@ -20,7 +23,7 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #15173Db2;
+  background: #15173db2;
   border-radius: 50px;
   transition: all 0.2s ease-in-out;
 }
@@ -31,12 +34,12 @@
 }
 
 html {
-  background-color: var(--BGCOLOR);
+  background-color: var(--TCOLOR);
 }
 
 body {
   font-family: "Open Sans", sans-serif;
-  background-color: var(--BGCOLOR);
+  background-color: var(--TCOLOR);
   color: #fff;
   position: relative;
   background: transparent;
@@ -45,8 +48,8 @@ body {
 body::before {
   content: "";
   position: fixed;
-  /* background: #292727 url("../img/bgs.png") top right no-repeat; */
-  background: #292727 url("../img/bg.png") top right no-repeat;
+  background: #292727 url("../img/bg1.png") top right no-repeat;
+  /* background: #292727 url("../img/bg.png") top right no-repeat; */
   background-size: cover;
   left: 0;
   right: 0;
@@ -62,12 +65,12 @@ body::before {
 }
 
 a {
-  color: var(--PCOLOR);
+  color: var(--SCOLOR);
   text-decoration: none;
 }
 
 a:hover {
-  color: var(--PCOLOR);
+  color: var(--SCOLOR);
   text-decoration: none;
 }
 
@@ -90,6 +93,7 @@ h6 {
   display: flex;
   align-items: center;
   z-index: 997;
+  background-color: var(--CHCOLOR);
   overflow-y: auto;
 }
 
@@ -108,7 +112,7 @@ h6 {
 
 #header h1 a,
 #header h1 a:hover {
-  color: #fff;
+  color: var(--SCOLOR);
   line-height: 1;
   display: inline-block;
 }
@@ -120,7 +124,7 @@ h6 {
 }
 
 #header h2 span {
-  color: #fff;
+  color: var(--SCOLOR);
   border-bottom: 2px solid var(--PCOLOR);
   padding-bottom: 6px;
 }
@@ -141,7 +145,7 @@ h6 {
   justify-content: center;
   align-items: center;
   background: rgba(255, 255, 255, 0.1);
-  color: #fff;
+  color: var(--SCOLOR);
   line-height: 1;
   margin-right: 8px;
   border-radius: 50%;
@@ -178,7 +182,7 @@ h6 {
   left: 0;
   top: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.9);
+  background: var(--SHCOLOR);
 }
 
 #header.header-top .social-links,
@@ -278,7 +282,7 @@ h6 {
 .navbar a:hover,
 .navbar .active,
 .navbar li:hover > a {
-  color: #fff;
+  color: var(--SCOLOR);
 }
 
 /**
@@ -312,7 +316,7 @@ h6 {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.9);
+  background: var(--SHCOLOR);
   transition: 0.3s;
   z-index: 999;
   margin-top: 0;
@@ -372,7 +376,7 @@ section.section-show {
 }
 
 section .container {
-  background: rgba(0, 0, 0, 0.9);
+  background: var(--SHCOLOR);
   padding: 30px;
 }
 
@@ -755,8 +759,8 @@ section .container {
 }
 
 .services .icon-box:hover {
-  background: var(--PCOLOR);
-  border-color: var(--PCOLOR);
+  background: var(--TCOLOR);
+  border-color: var(--TCOLOR);
 }
 
 .services .icon-box:hover .icon {
@@ -764,7 +768,7 @@ section .container {
 }
 
 .services .icon-box:hover .icon i {
-  color: var(--PCOLOR);
+  color: var(--SCOLOR);
 }
 
 .services .icon-box:hover .icon::before {
@@ -821,12 +825,12 @@ section .container {
   position: relative;
   overflow: hidden;
   z-index: 1;
-  background: rgba(0, 0, 0, 0.6);
+  background: var(--SHCOLOR);
 }
 
 .portfolio .portfolio-wrap::before {
   content: "";
-  background: rgba(0, 0, 0, 0.6);
+  background: var(--SHCOLOR);
   position: absolute;
   left: 30px;
   right: 30px;
@@ -939,7 +943,7 @@ section .container {
 --------------------------------------------------------------*/
 .portfolio-details {
   padding-top: 40px;
-  background: rgba(0, 0, 0, 0.8);
+  background: var(--SHCOLOR);
   position: fixed;
   left: 0;
   right: 0;
@@ -1197,7 +1201,7 @@ section .container {
   .credits {
     text-align: center;
     padding: 10px;
-    background: rgba(0, 0, 0, 0.8);
+    background: var(--SHCOLOR);
   }
 }
 
